@@ -44,7 +44,7 @@ def save():
 def saveAs():
     global routeFile
     message.set("Save as")
-    file = fileDialog.asksaveasfilename(
+    file = fileDialog.asksaveasfile(
         title="Save the file as", mode="w", defaultextension=".txt")
     if file is not None:
         routeFile = file.name
