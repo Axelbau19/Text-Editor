@@ -53,6 +53,9 @@ def saveAs():
         file.write(contents)
         file.close()
         message.set("The file was saved correctly")
+    else:
+        message.set("Save canceled")
+        routeFile = ""
 
 
 # root settings
